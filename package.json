@@ -5,7 +5,7 @@
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/psychobunny/nodebb-theme-lavender"
+    "url": "https://github.com/babaggeii/node-theme-argument"
   },
   "keywords": [
     "nodebb",

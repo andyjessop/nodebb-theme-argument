@@ -23,26 +23,7 @@
 			<div class="navbar-collapse collapse navbar-ex1-collapse">
 				<!-- IF !maintenanceHeader -->
 				<ul id="main-nav" class="nav navbar-nav pull-left">
-					<!-- IF loggedIn -->
-					<li>
-						<a href="{relative_path}/unread" title="[[global:header.unread]]">
-							<i id="unread-count" class="fa fa-fw fa-inbox" data-content="0" ></i><span class="visible-xs-inline"> [[global:header.unread]]</span>
-						</a>
-					</li>
-					<!-- ENDIF loggedIn -->
 
-					<li>
-						<a href="{relative_path}/recent" title="[[global:header.recent]]">
-							<i class="fa fa-fw fa-clock-o"></i><span class="visible-xs-inline"> [[global:header.recent]]</span>
-						</a>
-					</li>
-					<!-- IF isAdmin -->
-					<li>
-						<a href="{relative_path}/admin" title="[[global:header.admin]]" target="_top">
-							<i class="fa fa-fw fa-cogs"></i><span class="visible-xs-inline"> [[global:header.admin]]</span>
-						</a>
-					</li>
-					<!-- ENDIF isAdmin -->
 					<!-- IF searchEnabled -->
 					<li class="visible-xs">
 						<a href="{relative_path}/search" title="[[global:header.search]]" id="mobile-search-button" >
@@ -67,6 +48,28 @@
 
 				<!-- IF loggedIn -->
 				<ul id="logged-in-menu" class="nav navbar-nav navbar-right pull-right">
+
+				
+					<li>
+						<a href="{relative_path}/unread" title="[[global:header.unread]]">
+							<i id="unread-count" class="fa fa-fw fa-inbox" data-content="0" ></i><span class="visible-xs-inline"> [[global:header.unread]]</span>
+						</a>
+					</li>
+
+					<li>
+						<a href="{relative_path}/recent" title="[[global:header.recent]]">
+							<i class="fa fa-fw fa-clock-o"></i><span class="visible-xs-inline"> [[global:header.recent]]</span>
+						</a>
+					</li>
+
+					<!-- IF isAdmin -->
+					<li>
+						<a href="{relative_path}/admin" title="[[global:header.admin]]" target="_top">
+							<i class="fa fa-fw fa-cogs"></i><span class="visible-xs-inline"> [[global:header.admin]]</span>
+						</a>
+					</li>
+					<!-- ENDIF isAdmin -->
+
 					<li class="notifications dropdown text-center hidden-xs">
 						<a href="#" title="[[global:header.notifications]]" class="dropdown-toggle" data-toggle="dropdown" id="notif_dropdown">
 							<i class="fa fa-fw fa-bell-o" data-content="0"></i>
@@ -83,7 +86,6 @@
 							<i class="fa fa-bell-o fa-fw"></i> [[notifications:title]]
 						</a>
 					</li>
-
 					<li id="user_label" class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#" id="user_dropdown" title="[[global:header.profile]]">
 							<img id="user-header-picture" src="{user.picture}"/>
@@ -121,6 +123,7 @@
 							</li>
 						</ul>
 					</li>
+
 				</ul>
 				<!-- ELSE -->
 				<ul id="logged-out-menu" class="nav navbar-nav navbar-right pull-right">

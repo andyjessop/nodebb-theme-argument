@@ -95,48 +95,6 @@
 									<span>, [[global:last_edited_by_ago, <strong><a href="{relative_path}/user/{posts.editor.userslug}">{posts.editor.username}</a></strong>, <span class="timeago" title="{posts.relativeEditTime}"></span>]]</span>
 									<!-- ENDIF posts.editor.username -->
 								</small>
-
-								<div class="dropdown share-dropdown">
-									<a href="#" class="dropdown-toggle postMenu favourite-tooltip" id="postMenu_{posts.pid}" data-toggle="dropdown">
-										<i class="fa fa-heart"></i>
-									</a>
-									<ul class="dropdown-menu" role="menu" aria-labelledby="postMenu_{posts.pid}">
-										<li role="presentation">
-											<!-- IF isFollowing -->
-											<a href="#" role="menuitem" tabindex="-1" class="follow" title="[[topic:unwatch.title]]"><span>[[topic:unwatch]]</span> <i class="fa fa-eye-slash"></i></a>
-											<!-- ELSE -->
-											<a href="#" role="menuitem" tabindex="-1" class="follow" title="[[topic:watch.title]]"><span>[[topic:watch]]</span> <i class="fa fa-eye"></i></a>
-											<!-- ENDIF isFollowing -->
-										</li>
-										<li role="presentation">
-											<a role="menuitem" tabindex="-1" data-favourited="{posts.favourited}" class="favourite">
-												<span class="favourite-text">[[topic:favourite]]</span>
-												<span class="favouriteCount" data-favourites="{posts.reputation}">{posts.reputation}</span>&nbsp;
-												<!-- IF posts.favourited -->
-												<i class="fa fa-heart"></i>
-												<!-- ELSE -->
-												<i class="fa fa-heart-o"></i>
-												<!-- ENDIF posts.favourited -->
-											</a>
-										</li>
-										<!-- IF !config.disableSocialButtons -->
-										<li role="presentation" class="divider"></li>
-										<li role="presentation" class="dropdown-header">[[topic:share_this_post]]</li>
-										<li role="presentation">
-											<a role="menuitem" class="facebook-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-facebook"></i></span> Facebook</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" class="twitter-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-twitter"></i></span> Twitter</a>
-										</li>
-										<li role="presentation">
-											<a role="menuitem" class="google-share" tabindex="-1" href="#"><span class="menu-icon"><i class="fa fa-google-plus"></i></span> Google+</a>
-										</li>
-										<!-- ENDIF !config.disableSocialButtons -->
-										<li class="text-center">
-											<input type="text" id="post_{posts.pid}_link" value="" class="form-control post-link inline-block"></input>
-										</li>
-									</ul>
-								</div>
 								<!-- IF !reputation:disabled -->
 								&bull;
 								<a href="#" class="upvote <!-- IF posts.upvoted --> upvoted btn-primary <!-- ENDIF posts.upvoted -->">
@@ -156,13 +114,6 @@
 									<!-- END custom_profile_info -->
 								<!-- ENDIF posts.user.custom_profile_info.length -->
 								<span class="post-tools">
-									<!-- IF !posts.selfPost -->
-									<!-- IF posts.user.userslug -->
-									<!-- IF loggedIn -->
-									<button class="btn btn-sm btn-link chat" type="button" title="[[topic:chat]]"><i class="fa fa-comment"></i><span class="hidden-xs-inline"> [[topic:chat]]</span></button>
-									<!-- ENDIF loggedIn -->
-									<!-- ENDIF posts.user.userslug -->
-									<!-- ENDIF !posts.selfPost -->
 									<!-- IF privileges.topics:reply -->
 									<button class="btn btn-sm btn-link quote" type="button" title="[[topic:quote]]"><i class="fa fa-quote-left"></i><span class="hidden-xs-inline"> [[topic:quote]]</span></button>
 									<button class="btn btn-sm btn-link post_reply" type="button"><i class="fa fa-reply"></i><span class="hidden-xs-inline"> [[topic:reply]]</span></button>

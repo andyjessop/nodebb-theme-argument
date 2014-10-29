@@ -1,2 +1,1 @@
-Argument Club Theme for NodeBB
-==============================
+# NodeBB theme for argumentclub.co.uk

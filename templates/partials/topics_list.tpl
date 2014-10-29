@@ -34,7 +34,7 @@
 							</div>
 						</div>
 						<div class="col-xs-1 category-stat hidden-xs">
-							<p class="human-readable-number" title="{topics.postcount}">{topics.postcount}</p><br />
+							<strong class="human-readable-number" title="{topics.postcount}">{topics.postcount}</strong><br />
 							<small>[[global:posts]]</small>
 						</div>
 						<div class="col-xs-1 category-stat hidden-xs">
