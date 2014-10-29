@@ -1,0 +1,113 @@
+/*  ========================
+    BASE
+    ======================== */
+
+/* Font import */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,800italic,400,300,700,800|Source+Sans+Pro:300,400,700,300italic,400italic,700italic|Coustard:400,900);
+// Layout
+
+body {
+    padding-top: 112px;
+
+}
+// ---- Typography
+
+body {
+    font-weight: 500;
+
+}
+.lead {
+    font-weight: 300;
+
+}
+pre {
+    color: white;
+
+}
+h1 small,
+.h1 small {
+    font-weight: 500;
+    color: lighten(@brand-primary, 10%);
+
+}
+// ---- Jumbotron
+
+.jumbotron {
+    .btn-primary {
+        background-color: darken(@brand-primary, 7%);
+
+    }
+    p {
+        font-weight: 300;
+    }
+
+}
+// ---- Navs
+
+.nav-pills > li.active > a,
+.nav-pills > li > a:hover {
+    border-radius: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+    border-top: 2px solid @brand-primary;
+
+}
+// ---- Buttons
+
+.btn {
+    font-weight: 500;
+    border-radius: 4px;
+    border-width: 2px;
+}
+.btn-default:hover {
+    color: @gray;
+    background-color: lighten(@brand-primary, 40%);
+
+}
+// ---- Labels
+
+.label {
+    border-radius: 0;
+
+}
+// ---- Pagination
+
+.pagination > li > a {
+    border-width: 0;
+    border-bottom-width: 3px;
+
+    &:first-child {
+        border-left-width: 0;
+    }
+
+}
+// ---- Panels
+
+.panel {
+    border-width: 0;
+    border-top-width: 3px;
+    .box-shadow(0 1px 10px rgba(0,0,0,0.15));
+
+}
+.panel-default {
+    border-top-color: @brand-primary;
+
+}
+.panel-heading {
+    background: transparent;
+    border-bottom-color: @gray-lighter;
+
+}
+.panel-footer {
+    background: transparent;
+    border-top-color: @gray-lighter;
+
+}
+// ---- Progress Bars
+
+.progress {
+    .box-shadow(0 -1px 0px rgba(0,0,0,0.1) inset);
+
+}
+// ---- Well

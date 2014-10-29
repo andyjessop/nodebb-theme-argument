@@ -1,0 +1,23 @@
+{
+  "name": "nodebb-theme-argument",
+  "version": "0.1",
+  "description": "Argument Club Theme for NodeBB",
+  "main": "theme.less",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/psychobunny/nodebb-theme-lavender"
+  },
+  "keywords": [
+    "nodebb",
+    "lavender",
+    "theme",
+    "themes"
+  ],
+  "author": {
+    "name": "Andy Jessop",
+    "email": "andyjessop.olp@gmail.com"
+  },
+  "peerDependencies": {
+    "nodebb-theme-vanilla": "~0.1.0"
+  }
+}
